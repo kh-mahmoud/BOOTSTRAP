@@ -1,0 +1,126 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Bootstrap 4</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <style>
+          body
+          {
+              margin: 0px;
+              padding: 0px;
+          }
+         
+          .barre
+          {
+              width: 50px;
+              height: 50px;
+          }
+       img{
+           
+           
+           width: 100%;
+           margin-top: 10px;
+           cursor: pointer;
+           filter: grayscale(1);
+           border-radius: 5px;
+           transition: 0.2s linear;
+       }  
+       .row
+       {
+           display: flex;
+       }
+       .row .column
+       {
+           flex: 30%;
+           padding: 4px;
+       }
+       img:hover
+       {
+           filter: grayscale(0) brightness(1);
+       }
+      
+
+
+
+
+
+      </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <a href="#" class="navbar-brand">
+            <img src="9.png" class="barre">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menuhamburger">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+        <div class="collapse navbar-collapse" id="menuhamburger">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a href="#" class="nav-link">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Gallerie</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Tutoriels</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline">
+         <input class="form-control mr-sm-2" type="search" placeholder="Search">
+         <button class="btn btn-primary" type="submit">Envoyer</button>
+           </form>
+        </div>
+    </nav>
+    <h1 class="text-center">WELCOME TO OUR GALLERY</h1>
+    <div class="container-fluid">
+      <div class="row">
+         <div class="col-lg-4">
+             <img src="37958.jpg" >
+             <img src="74728.jpg" >
+             <img src="390.jpg" >
+             <img src="81286.jpg" >
+             <img src="673328.png" style="height: 465px;" >
+         </div> 
+         <div class="col-lg-4">
+            <img src="407469.jpg" style="height: 500px";>
+            <img src="35957.jpg">
+            <img src="2588.jpg" >
+            <img src="316963.jpg" >
+            <img src="413249.jpg" >
+        </div> 
+        <div class="col-lg-4">
+            <img src="71068.jpg" >
+            <img src="30627.jpg" >
+            <img src="1014884.jpg" >
+            <img src="36680.png" >
+            <img src="235575.jpg" style="height: 485px;" >
+        </div> 
+      </div>
+     </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    
+</body>
