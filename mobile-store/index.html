@@ -1,0 +1,328 @@
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+<style>
+  .img
+  {
+      background-image:url(48578.jpg) ;
+      height: 200px;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      color: white;
+      
+  }
+   .item
+   {
+       text-align: center;
+   }
+   .top
+{
+  height: 100px;
+  width: 974px;
+  background-image: url(s.jpg);
+  margin-bottom: 10px;
+ 
+  box-shadow: 3px 2px 5px 1px black;
+  animation: slider 9s infinite linear;
+}
+@keyframes slider
+{
+0%{background-image: url(t.jpg);}
+30%{background-image: url(a.jpg);}
+35%{background-image: url(f.jpeg);}
+75%{background-image: url(e.jpeg);}
+}
+
+
+.btn
+{
+    display: inline-block;
+    
+    
+    background-color: silver;
+    
+    color: rgb(69, 127, 236);
+    margin: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn i
+{
+    font-size: 30px;
+   margin-top: 28px;
+   transition: 0.2s linear;
+}
+
+.btn:hover i
+{
+transform: scale(2);
+color: white;
+}
+.btn::before
+{
+    content: "";
+  height: 120%;
+  width: 120%;
+  background-color: #3498db;
+  position: absolute;
+  transform: rotate(45deg);
+  left: -100;
+  top: 90;
+}
+
+.btn:hover::before
+{
+    animation: aaa 0.7s 1;
+    left: -100;
+  top: 90;
+}
+@keyframes aaa{
+    0%{
+        left: -100;
+        top: 90;
+    }50%{
+        left: 10%;
+        top: -30;
+    }100%{
+        left: -100;
+         top: 90;
+    }
+}
+.drop
+     {
+         float: left;
+         background-color: white;
+         height: 60px;
+         width: 60px;
+         border-radius:50px;   
+         cursor: pointer; 
+         transition: all 0.3s ease-out; 
+         margin: 13px;
+         overflow: hidden;
+         }
+         .drop:hover
+         {
+             width: 200px;
+             display:flex;
+            
+         }
+     .icone
+     {
+         height: 60px;
+         width: 60px;
+         border-radius: 50px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     .icone>i
+     {
+        font-size: 25px;
+        transform: scale(2);
+     }
+     span
+     {
+         line-height: 60px;
+         font-size: 25px;
+         margin-left: 10px;
+     }
+   
+      .fb
+      {
+          color: rgb(64, 64, 226);
+      }
+      .tw
+      {
+          color: rgb(10, 198, 204);
+      }   
+      .ins
+      {
+         color: crimson;
+      }
+      .gr
+      {
+       color:rgb(56, 56, 56) ;
+      }
+      .you
+      {
+         color: red;
+      }
+    .footer
+    {
+      border-top: 2px solid black;
+      display: flex;
+      align-items: center;
+    }
+    .all
+    {
+      flex-direction: column;
+    }
+
+
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <a href="#" class="navbar-brand">
+            <img src="9.png" width="50">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menuhamburger">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+        <div class="collapse navbar-collapse" id="menuhamburger">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a href="#" class="nav-link">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Gallerie</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Tutoriels</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline">
+         <input class="form-control mr-sm-2" type="search" placeholder="Search">
+         <button class="btn btn-primary" type="submit">Envoyer</button>
+           </form>
+        </div>
+    </nav>
+   <div class="img">
+        <h1 style="margin-left: 20px;">PHONE STORE ONLINE FRANCE</h1>
+   </div>
+  
+   <div class="container-fluid item">
+      <div class="row">
+        <div class="top col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+        <div class="col-lg-12"><h1>CHECK OUR PHONES LISTE</h1></div>
+        <div class="col-xs-12 col-lg-3 col-md-4 col-sm-6 " style="padding-top: 20px;">
+         <img src="images.jpg" class="rounded-circle">
+             <h1>iPhone 12 PRO</h1>
+             <p>Tarif de l’iPhone 12 Pro et de l'iPhone 12 Pro Max après reprise d’un iPhone Xs Max 64 Go.
+                 D’autres valeurs de crédit après reprise nécessitent l’achat d’un nouvel iPhone et sont soumises à des conditions de disponibilité ainsi qu’à certaines limites.
+                 La valeur du crédit après reprise peut varier selon l’état, l’année et la configuration de l’appareil échangé, et selon que l’échange est effectué en ligne ou en magasin.
+            </p>
+        </div>
+        <div class="col-xs-12 col-lg-3 col-md-4 col-sm-6" style="padding-top: 35px;">
+            <img src="1.jpg" class="rounded-circle">
+            <h1>Galaxy S21 Ultra</h1>
+            <p>
+             Samsung Galaxy S21 Ultra 5G est sorti en 2021 . Il mesure 165.1 x 75.6 x 8.9 mm et pèse 227 g. Il dispose d'un écran Dynamic AMOLED 2X de 6.8" pouces.
+              La définition d'écran est de 1440 x 3200 et la résolution est de 515 ppi. Un appareil photo Unique de 40 MP est responsable des selfies et les appels vidéo.. L'appareil principal Quadruple est de 108 MP.
+               L'appareil aussi intègre un processeur Octa-core. 
+               La batterie est de 5000 mAh.
+            </p>
+        </div>
+        <div class="col-xs-12 col-lg-3 col-md-4 col-sm-6">
+            <img src="2.jpg" class="rounded-circle">
+            <h1> GALAXY A20e </h1>
+            <p>
+                Malgré quelques atouts non négligeables (bonne autonomie, design compact, interface One UI) le Galaxy A20e ne parvient pas à convaincre.
+                 Ses performances trop justes, son écran TFT LCD et son appareil photo trop moyen ne lui permettent pas de rivaliser avec les références du marché.
+                  Le Xiaomi Redmi Note 7, le Huawei P Smart+ ou encore le Honor 10 Lite restent indétrônables sur ce segment de prix.
+            </p>
+     </div>
+        <div class="col-xs-12 col-lg-3 col-md-4 col-sm-6">
+            <img src="3.jpg" class="rounded-circle">
+            <h1>Xiaomi REDMI NOTE 9 </h1>
+            <p>
+                Disponible à partir de 199 euros en version 64 Go et 229 euros en version 128 Go, le Redmi Note 9 vient succéder à l’excellent Redmi Note 8T.
+                 Avec ce nouveau smartphone d’entrée de gamme, Xiaomi veut renforcer sa position sur un marché ultra-concurrentiel,il est équipé d'un écran de 6,53 pouces Full HD+. Il est notamment équipé d'un SoC Mediatek Helio G85 épaulé par 4 ou 6 Go de RAM.
+            </p>
+     </div>
+     <div class="col-xs-12 col-lg-3 col-md-4 col-sm-6">
+        <img src="4.jpg" class="rounded-circle">
+        <h1> GALAXY S20 FE 5G </h1>
+        <p>
+            Le Samsung Galaxy S20 FE (5G) est vendu un peu plus cher que la version 4G par Samsung, mais c'est le prix à payer pour profiter de la 5G comme son nom l'indique.
+             On note aussi la présence d'un processeur Qualcomm Snapdragon 865 à la place de l'Exynos 990.
+              Mais dans les grandes lignes, ces deux modèles offrent les mêmes performances. Il profite ainsi d'un écran Super AMOLED 120 Hz et d'une batterie de 4500 mAh.
+        </p>
+    </div>
+    <div class="col-xs-12 col-lg-3 col-md-4 col-sm-6" style="padding-top: 39px;">
+        <img src="5.jpg" class="rounded-circle">
+        <h1>LG STYLUS 3 </h1>
+        <p>
+            LG Stylus 3 est sorti en 2016 . Il mesure 155.6 x 79.8 x 7.4 mm et pèse 149 g. Il dispose d'un écran IPS LCD de 5.7" pouces.
+             La définition d'écran est de 720 x 1280 et la résolution est de 258 ppi. Un appareil photo Unique de 5 MP est responsable des selfies et les appels vidéo.. L'appareil principal Unique est de 13 MP.
+              L'appareil intègre un processeur Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53) - M400DK
+            Octa-core 1.4 GHz Cortex-A53 - LS777 et de mémoire 16 GB, 3 GB RAM (M400DK) 2 GB RAM (K10 Pro, LS777). La batterie est de 3200 mAh.
+        </p>
+        </div>
+        <div class="col-xs-12 col-lg-3 col-md-4 col-sm-6">
+            <img src="6.jpg" class="rounded-circle">
+            <h1>ONE PLUS NORD 5G </h1>
+            <p>
+                Les téléphones avec Alexa d'intégrées vous permettent de passer des appels téléphoniques, d'ouvrir des applications,
+                 de contrôler des appareils intelligents pour la maison, d'accéder à la bibliothèque Alexa Skills, et plus encore en utilisant uniquement votre voix lors de vos déplacements.
+                  Téléchargez l'application Alexa et terminez la configuration mains libres pour commencer. Demandez simplement - et Alexa répondra instantanément.
+            </p>
+        </div>
+        <div class="col-xs-6 col-lg-3 col-md-4 col-sm-6">
+            <img src="8.jpg" class="rounded-circle">
+            <h1>GALAXY M12 </h1>
+            <p>
+                Samsung Galaxy M12 a un poids de et a des dimensions de .
+                 Sa taille écran de 6.7 pouces pouces. La résolution est de 1560x720 pixels, l'image est claire.
+                  La caméra arrière a un capteur 13MP . Pour les selfies de haute qualité, la caméra frontale en 8MP est responsable.
+                Samsung Galaxy M12 : La date de sortie est décembre 2020. Nous notons également les caractéristiques techniques suivantes de l'appareil: 4GB de mémoire vive (RAM) et 64GB de capacité interne, qui fonctionnent avec le processeur Qualcomm Snapdragon 460.
+          Le modèle sera un excellent choix pour les personnes habituées à Android 11 OS, ce qui vaut la peine d'être acheté en ce moment, car le prix de l'appareil est très bon marché.
+            </p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img src="7.jpg" class="rounded-circle">
+            <h1>ONE PLUS 7 PRO </h1>
+            <p>
+                Le OnePlus 7 Pro est un smartphone haut de gamme annoncé le 14 mai 2019, version améliorée du OnePlus 7.
+                 Il est équipé d'un écran AMOLED QHD+ de 6,67 pouces sans encoche, d'un SoC Qualcomm Snapdragon 855 et d'un triple capteur photo de 48+8+16 mégapixels .
+                Les OnePlus 7 et OnePlus 7 Pro succèdent à un OnePlus 6T déjà très réussi.
+                 Cette fois, la marque chinoise a décidé de décliner sa nouvelle gamme de flagship killer en deux variantes : un modèle haut de gamme, très différent des précédentes productions de la marque, et une variante standard, amélioration timide du OnePlus 6T.
+                  On fait le point sur ces 2 smartphones. 
+            </p>
+        </div>
+   </div>
+   <div class="footer">
+     <h1 style="margin-right: 50px;">VISITE US ON OUR MEDIA:</h1>
+    <div class="all">
+      <div class="drop">
+        <div class="icone" style="background-color: rgb(64, 64, 226);"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+        <span class="fb">Facebook</span>
+      </div>
+      <div class="drop">
+        <div class="icone" style="background: rgb(10, 198, 204);"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+        <span class="tw">Twitter</span>
+      </div>
+      <div class="drop">
+        <div class="icone" style="background: crimson;"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+        <span class="ins">Instagram</span>
+      </div>
+      <div class="drop">
+        <div class="icone" style="background: rgb(56, 56, 56);"><i class="fa fa-github" aria-hidden="true"></i></div>
+        <span class="gr">Github</span>
+      </div>
+      <div class="drop">
+        <div class="icone" style="background: red;"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+        <span class="you">Youtube</span>
+      </div>
+    </div>
+  </div>
+</body>
